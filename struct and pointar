@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+ struct ogrenci {
+ 	char isim[6];
+ 	char soyisim[6];
+ 	int no;
+ };
+
+ void goster (struct ogrenci *p) {
+ 	
+ 	printf("bilgiler:\nisim:%s\nsoyisim:%s\nno:%d", p->isim, p->soyisim, p->no);
+ }
+
+
+
+int main(int argc, char *argv[]) {
+	
+	struct ogrenci ogr={"ali", "hok", 446};
+	
+	goster(&ogr);
+
+	
+	return 0;
+}
